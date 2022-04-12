@@ -1,0 +1,214 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.795);
+    color: #000000;
+    padding: 0;
+    position: sticky;
+    top: 0;
+    opacity: 1;
+}
+
+header h1 {
+    transition: color 0.1s ease-in-out;
+    color: #000000;
+}
+
+header h1:hover {
+    color: rgb(132, 0, 255);
+}
+
+header ul {
+    margin: 0%;
+    text-align: center;
+}
+
+header li {
+    margin: 1rem ;
+    display: inline;
+    font-size: 1.1em;
+}
+
+header a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.1s ease-in-out;
+}
+
+header a:hover {
+    color: rgb(132, 0, 255);
+}
+
+section {
+    text-align: center;
+}
+
+section article {
+    margin: 1rem;
+    padding: 1rem;
+}
+
+section article h3, section article p {
+    margin: 1rem;
+}
+
+footer {
+    background-color: #000000;
+    padding: 2.5rem;
+    color: #ffffff;
+    height: 3rem;
+}
+
+footer section {
+    float: right;
+}
+
+footer h4 {
+    margin: 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    transition: color 0.1s ease;
+    color:#ffffff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: rgb(132, 0, 255);    
+}
+
+.grid-conteiner {
+    display: grid;  
+    grid-template-areas: 
+    "grid-header grid-header grid-header grid-header"
+    "grid-main grid-main grid-main grid-main"
+    "grid-footer grid-footer grid-footer grid-footer"; 
+}
+.grid-header { grid-area: grid-header; }
+.grid-footer { grid-area: grid-footer; }
+.grid-main { grid-area: grid-main; }
+
+.Envios {
+    display: flex;
+    font-size: 10px;
+    justify-content: center;
+    align-items: center;
+    margin: 0rem;
+    padding: 0rem;
+    text-align: center;
+    background-color: #000000;
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    height: 1.5rem;
+}
+
+.flexInicio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flexChombas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.chombas {
+    text-align: center;
+    background-color: #ffffff;
+    margin: 1rem;
+    border-radius: 0.5rem;
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    width: 225px;
+    height: 390px;
+}
+
+.chombas:hover {
+    box-shadow: 0 0.1rem 0.6rem rgb(132, 0, 255);
+    transition: 0.1s ease-in-out;
+    transform: scale(1.02);
+    cursor: pointer;
+}
+
+.flexFormulario {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.formulario { 
+    text-align: center;
+    width: 250px;
+    height: 350px;
+    background-color: #ffff;
+    border: 1px solid black;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.flexUbicacion {
+    display: flex;
+    justify-content: center;
+}
+.ubicacion {
+    background-image: #fff;
+    margin: 3rem;
+    margin-top: 0rem;
+    margin-bottom: 1rem; 
+    padding: 1rem;
+}
+
+@media only screen and (max-width:480px) {
+    .grid-conteiner {
+        display: grid; 
+        grid-template-areas: 
+        "grid-header grid-header"  
+        "grid-main grid-main"    
+        "grid-footer grid-footer"; 
+    }
+    .sacar { 
+        display: none;
+    }
+
+    .sacar1 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width:768px) {
+    .grid-conteiner {
+        display: grid; 
+        grid-template-areas: 
+        "grid-header grid-header grid-header"
+        "grid-main grid-main grid-main"
+        "grid-footer grid-footer grid-footer"; 
+    }
+    .sacar {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width:1024px) {
+    .grid-conteiner {
+        display: grid; 
+        grid-template-areas: 
+        "grid-header grid-header grid-header grid-header"
+        "grid-main grid-main grid-main grid-main"
+        "grid-footer grid-footer grid-footer grid-footer"; 
+    }
+}
