@@ -12,7 +12,6 @@ header {
     background-color: rgba(255, 255, 255, 0.795);
     color: #000000;
     padding: 0;
-    position: sticky;
     top: 0;
     opacity: 1;
 }
@@ -20,6 +19,9 @@ header {
 header h1 {
     transition: color 0.1s ease-in-out;
     color: #000000;
+    font-size: 2rem;
+    margin-top: 1rem;
+    padding: 1rem;
 }
 
 header h1:hover {
@@ -57,6 +59,7 @@ section article {
 }
 
 section article h3, section article p {
+    font-size: 1rem;
     margin: 1rem;
 }
 
@@ -64,7 +67,6 @@ footer {
     background-color: #000000;
     padding: 2.5rem;
     color: #ffffff;
-    height: 3rem;
 }
 
 footer section {
@@ -73,6 +75,7 @@ footer section {
 
 footer h4 {
     margin: 0;
+    font-size: 1rem;
 }
 
 footer p {
@@ -102,7 +105,7 @@ footer a:hover {
 
 .Envios {
     display: flex;
-    font-size: 10px;
+    font-size: 0.7rem;
     justify-content: center;
     align-items: center;
     margin: 0rem;
@@ -112,7 +115,11 @@ footer a:hover {
     color: #ffffff;
     position: sticky;
     top: 0;
-    height: 1.5rem;
+    height: 1.6rem;
+}
+
+.p {
+    margin-bottom: 0;
 }
 
 .flexInicio {
@@ -128,20 +135,32 @@ footer a:hover {
 }
 
 .chombas {
+    font-size: 1rem;
     text-align: center;
     background-color: #ffffff;
     margin: 1rem;
     border-radius: 0.5rem;
+    border: 1px solid rgba(0,0,0,.125);
     color: rgb(0, 0, 0);
     padding: 1rem;
-    width: 225px;
-    height: 390px;
+    width: 250px;
+    height: 420px;
+}
+
+.boton {
+    display: inline-block;
+    color: #ffff;
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
 }
 
 .chombas:hover {
-    box-shadow: 0 0.1rem 0.6rem rgb(132, 0, 255);
+    box-shadow: 0 0.1rem 0.6rem #0d6efd;
     transition: 0.1s ease-in-out;
-    transform: scale(1.02);
+    transform: scale(1.03);
     cursor: pointer;
 }
 
@@ -154,7 +173,7 @@ footer a:hover {
 .formulario { 
     text-align: center;
     width: 250px;
-    height: 350px;
+    height: 455px;
     background-color: #ffff;
     border: 1px solid black;
     margin: 1rem;
@@ -181,13 +200,6 @@ footer a:hover {
         "grid-main grid-main"    
         "grid-footer grid-footer"; 
     }
-    .sacar { 
-        display: none;
-    }
-
-    .sacar1 {
-        display: none;
-    }
 }
 
 @media only screen and (min-width: 481px) and (max-width:768px) {
@@ -197,9 +209,6 @@ footer a:hover {
         "grid-header grid-header grid-header"
         "grid-main grid-main grid-main"
         "grid-footer grid-footer grid-footer"; 
-    }
-    .sacar {
-        display: none;
     }
 }
 
@@ -211,4 +220,8 @@ footer a:hover {
         "grid-main grid-main grid-main grid-main"
         "grid-footer grid-footer grid-footer grid-footer"; 
     }
+}
+
+.map {
+    display: flex;
 }
