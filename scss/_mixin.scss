@@ -1,0 +1,20 @@
+//mixin
+
+@mixin parrafos {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.parrafosEstilo {
+    @include parrafos;
+}
+
+@mixin sizes ($width, $heigth) {
+    width: $width;
+    height: $heigth;
+}
+
+.input1 {
+    @include sizes (50%, 40px)
+}
