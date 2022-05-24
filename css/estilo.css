@@ -36,7 +36,7 @@ html {
   font-family: 'Montserrat', sans-serif; }
 
 body {
-  background-color: #fff;
+  background-color: #ffffff;
   margin: 0; }
 
 .grid-conteiner {
@@ -54,30 +54,40 @@ body {
 
 /*header*/
 header {
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   color: #000000; }
 
-header h1 {
-  display: inline;
-  position: relative;
-  height: 10px;
-  right: 120px;
-  top: 1rem;
-  transition: color 0.1s ease-in-out;
+.Envios {
+  display: flex;
+  font-size: 0.7rem;
+  justify-content: center;
+  align-items: center;
+  background-color: #efefef;
   color: #000000;
-  font-size: 2.4rem; }
-  header h1:hover {
-    color: #0d6efd; }
+  margin: 0rem;
+  padding: 0rem;
+  height: 1.6rem; }
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+.flexItem {
+  margin: .5rem; }
 
 header ul {
-  display: flex;
-  justify-content: center; }
+  margin: 0rem;
+  padding: 0rem; }
+
+header h1 {
+  padding-right: 2.5rem; }
 
 header li {
-  display: inline;
-  position: relative;
-  top: 1.3em;
-  margin: 1rem;
+  display: inline-block;
+  margin: 2rem 1rem 1rem;
   font-size: 1.1em; }
 
 header a {
@@ -88,13 +98,10 @@ header a {
     color: #0d6efd; }
 
 .buscador1 {
-  display: inline;
-  position: relative;
+  display: inline-block;
   margin: 0.5rem;
-  top: 1em;
-  left: 10em;
+  height: 3rem;
   color: #000000;
-  cursor: pointer;
   background-color: #efefef;
   border: 1px solid #fff;
   padding: 0.375rem 0.75rem;
@@ -119,43 +126,42 @@ section article {
       margin: 1rem; }
 
 footer {
+  display: flex;
+  flex-direction: column;
   background-color: #000000;
   padding: 2.5rem;
   color: #ffffff; }
 
-footer section {
-  float: right; }
+footer h6 {
+  color: #8d8d8d;
+  margin: 0rem;
+  font-size: .9rem; }
 
-footer h4 {
-  margin: 0;
-  font-size: 1rem; }
+.icon {
+  display: flex;
+  margin: .5rem;
+  justify-content: center; }
+
+.redes {
+  display: flex;
+  justify-content: space-between; }
 
 footer p {
-  margin: 0rem;
-  padding: 0.5rem; }
+  text-align: center;
+  margin: .5rem;
+  padding: .5rem; }
 
 footer a {
   transition: color 0.1s ease;
   color: #ffffff;
   text-decoration: none;
-  padding: 0.5rem; }
+  margin: .5rem;
+  padding: .5rem; }
   footer a:hover {
     color: #0d6efd; }
 
-.Envios {
-  display: flex;
-  font-size: 0.8rem;
-  justify-content: center;
-  align-items: center;
-  margin: 0rem;
-  padding: 0rem;
-  text-align: center;
-  background-color: #000000;
-  color: #ffffff;
-  height: 1.7rem; }
-
 .p {
-  margin-bottom: 0; }
+  margin: 0rem; }
 
 .pi {
   margin: 1.5rem; }
