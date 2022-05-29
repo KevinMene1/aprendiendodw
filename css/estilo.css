@@ -230,7 +230,9 @@ footer a {
 @media only screen and (max-width: 480px) {
   .redes {
     display: flex;
-    flex-direction: column; } }
+    flex-direction: column; }
+  .navbar-brand {
+    justify-content: flex-start; } }
 
 @media only screen and (min-width: 481px) and (max-width: 768px) {
   .redes {
@@ -238,4 +240,6 @@ footer a {
     flex-direction: column; }
   .img-fluid .rounded-start {
     width: 354px;
-    height: 401px; } }
+    height: 401px; }
+  .navbar-brand {
+    justify-content: flex-start; } }

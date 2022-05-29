@@ -247,6 +247,9 @@ footer a {
         display: flex;
         flex-direction: column;
     }
+    .navbar-brand {
+        justify-content: flex-start;
+    }
 }
 
 @media only screen and (min-width: 481px) and (max-width:768px) {
@@ -257,6 +260,9 @@ footer a {
     .img-fluid .rounded-start {
         width: 354px;
         height: 401px;
+    }
+    .navbar-brand {
+        justify-content: flex-start;
     }
 }
 
